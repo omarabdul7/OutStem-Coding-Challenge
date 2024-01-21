@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.date-input-container {
+  margin-bottom: 20px;
+}
+
+.date-input, .dropdown-select {
+  background-color: #444;
+  color: white;
+  border: 1px solid #ccc;
+  padding-top: 5px;
+  padding-left: 3px;
+  padding-bottom: 1px;
+  border-radius: 5px;
+  margin-left: 3px;
+  margin-right: 15px;
+}
+
+.review-pie-chart, .order-bar-chart {
+  max-width: 500px; 
+  margin: auto;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.section-container {
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.order-bar-chart {
+  max-width: 900px; 
+  height: 500px; 
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-pie-chart {
+  align-items: center;
+}
+
+.monthy-revenue{
+  grid-column: 1 / -1; 
+  align-items: center;
+}
+
+.total-revenue {
+  grid-column: 1 / -1; 
+  align-items: center;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
